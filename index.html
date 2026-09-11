@@ -1,42 +1,87 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Educational Resources</title>
+    <title>Student Study Hub</title>
 
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f2f2f2;
             margin: 0;
-            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #eef2f3;
         }
 
         header {
-            background-color: #333;
+            background-color: #4a148c;
             color: white;
             text-align: center;
-            padding: 25px;
+            padding: 30px;
         }
 
-        .container {
-            width: 80%;
+        header h1 {
+            margin: 0;
+            font-size: 35px;
+        }
+
+        header p {
+            font-size: 18px;
+        }
+
+        .content {
+            width: 85%;
             margin: 30px auto;
-            background-color: white;
-            padding: 25px;
-            border-radius: 10px;
         }
 
-        h2 {
-            color: #333;
+        .content h2 {
             text-align: center;
+            color: #4a148c;
+            margin-bottom: 25px;
         }
 
-        ul {
-            line-height: 2;
+        .resources {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
         }
 
-        li {
-            margin: 10px 0;
+        .card {
+            background-color: white;
+            width: 250px;
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 3px 8px #aaa;
+        }
+
+        .card h3 {
+            color: #4a148c;
+        }
+
+        .card p {
+            color: #555;
+            line-height: 1.5;
+        }
+
+        .card a {
+            display: inline-block;
+            background-color: #4a148c;
+            color: white;
+            padding: 10px 15px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        .card a:hover {
+            background-color: #7b1fa2;
+        }
+
+        footer {
+            background-color: #4a148c;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 40px;
         }
     </style>
 </head>
@@ -44,21 +89,70 @@
 <body>
 
     <header>
-        <h1>Educational Resources</h1>
-        <p>Useful Study Resources for Students</p>
+        <h1>Student Study Hub</h1>
+        <p>Useful Educational Resources for Students</p>
     </header>
 
-    <div class="container">
+    <div class="content">
+
         <h2>Study Resources</h2>
 
-        <ul>
-            <li>Programming Notes</li>
-            <li>Data Structures Notes</li>
-            <li>Software Engineering Notes</li>
-            <li>Algorithms Notes</li>
-            <li>Database Management Notes</li>
-        </ul>
+        <div class="resources">
+
+            <div class="card">
+                <h3>Programming</h3>
+                <p>Learn programming concepts and examples.</p>
+                <a href="https://www.w3schools.com/" target="_blank">
+                    Visit Resource
+                </a>
+            </div>
+
+            <div class="card">
+                <h3>Data Structures</h3>
+                <p>Learn arrays, linked lists, stacks, queues and trees.</p>
+                <a href="https://www.geeksforgeeks.org/data-structures/" target="_blank">
+                    Visit Resource
+                </a>
+            </div>
+
+            <div class="card">
+                <h3>Algorithms</h3>
+                <p>Learn sorting, searching and algorithm techniques.</p>
+                <a href="https://www.geeksforgeeks.org/fundamentals-of-algorithms/" target="_blank">
+                    Visit Resource
+                </a>
+            </div>
+
+            <div class="card">
+                <h3>Software Engineering</h3>
+                <p>Learn SDLC, Agile, Scrum and software process models.</p>
+                <a href="https://www.tutorialspoint.com/software_engineering/index.htm" target="_blank">
+                    Visit Resource
+                </a>
+            </div>
+
+            <div class="card">
+                <h3>Database</h3>
+                <p>Study SQL, database concepts and normalization.</p>
+                <a href="https://www.w3schools.com/sql/" target="_blank">
+                    Visit Resource
+                </a>
+            </div>
+
+            <div class="card">
+                <h3>Web Development</h3>
+                <p>Learn HTML, CSS and basic web development.</p>
+                <a href="https://developer.mozilla.org/en-US/docs/Learn" target="_blank">
+                    Visit Resource
+                </a>
+            </div>
+
+        </div>
     </div>
+
+    <footer>
+        <p>© 2026 Student Study Hub</p>
+    </footer>
 
 </body>
 </html>
